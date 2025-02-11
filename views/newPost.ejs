@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Post</title>
+</head>
+
+<body>
+    <h2>Add new post</h2>
+    <h4>User name: @<%=username%>
+    </h4>
+    <form method="post" action="/createNewPostForUsername/<%=username%>">
+        <input placeholder="enter url for your post" name="photo" /><br />
+        <textarea placeholder="enter caption" name="caption"></textarea>
+        <button>Share</button>
+    </form>
+</body>
+
+</html>

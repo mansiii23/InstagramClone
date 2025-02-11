@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(243, 12, 151);
+}
+
+.image {
+    height: 400px;
+    width: 400px;
+}
+
+.posts {
+    display: inline-flex;
+    width: 415px;
+    justify-content: space-between;
+}
+
+.profile-photo {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.user {
+    margin-left: 10px;
+}
+
+.post {
+    display: inline;
+}
+
+.post-header {
+    display: inline-flex;
+}
+
+.post-detail {
+    display: inline-flex;
+}
+
+.caption {
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+.anchor {
+    display: flex;
+    justify-content: space-between;
+}

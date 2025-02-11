@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Post</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div class="post">
+        <div class="post-header">
+            <img class="profile-pic" src="/<%=posts[0].photo%>" />
+            <h3 class="user">
+                <%=post.username%>
+            </h3>
+        </div>
+        <hr style="margin: 0 1 0 0;">
+        <div>
+            <img class="image" src="/<%=post.photo%>">
+        </div>
+        <div class="post-detail">
+            <h4>
+                <%=post.username%>
+            </h4>
+            <p class="caption">
+                <%= post.caption %>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

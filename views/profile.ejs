@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <header>
+        <img class="profile-photo" src="/<%=posts[0].photo%>" />
+        <p><b>
+                @<%=posts[1].username%>
+            </b></p>
+        <div class="profile-details">
+            <h4>
+                <%=posts.length%> <br>posts
+            </h4>
+            <h4>
+                <%=Math.floor(Math.random() * 1000)+1%> <br>followers
+            </h4>
+            <h4>
+                <%=Math.floor(Math.random() * 1000)+1%> <br>following
+            </h4>
+        </div>
+    </header>
+    <%for(post of posts){%>
+        <div class="posts">
+            <div>
+                <img class="image" src="/<%=post.photo%>"><br>
+                <div class="anchor">
+                    <a href="http://localhost:8081/getPostById/<%=post.id%>">Click to view</a>
+                    <a href="http://localhost:8081/editPost/<%=post.id%>">Edit Post</a>
+                </div>
+            </div>
+        </div>
+        <%}%>
+            <footer><br><br><br>
+                <a href="http://localhost:8081/newPost/<%=posts[0].username%>">Create new Post [+]</a>
+            </footer>
+</body>
+
+</html>

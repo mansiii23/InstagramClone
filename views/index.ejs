@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <h1><i><b>Instagram</b></i></h1>
+    <%for(post of posts){%>
+        <div class="posts">
+            <div>
+                <img class="image" src="/<%=post.photo%>"><br>
+                <a href="http://localhost:8081/getPostById/<%=post.id%>">Click to view</a>
+            </div>
+        </div>
+        <%}%>
+</body>
+
+</html>
