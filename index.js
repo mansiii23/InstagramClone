@@ -42,30 +42,6 @@ let allPosts = [
     },
     {
         id: uuidv4(),
-        username: "mohit_sharma",
-        photo: "Mohit.jpeg",
-        caption: "Handsomeness"
-    },
-    {
-        id: uuidv4(),
-        username: "mohit_sharma",
-        photo: "Mohit2.jpeg",
-        caption: "Fire"
-    },
-    {
-        id: uuidv4(),
-        username: "mohit_sharma",
-        photo: "Mohit3.jpeg",
-        caption: "My bullet"
-    },
-    {
-        id: uuidv4(),
-        username: "mohit_sharma",
-        photo: "Mohit4.jpeg",
-        caption: "Baby"
-    },
-    {
-        id: uuidv4(),
         username: "sarthak.kamra",
         photo: "Sarthak.jpeg",
         caption: "picture credits to one n only @mansi.kamra"
